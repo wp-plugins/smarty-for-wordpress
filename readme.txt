@@ -87,8 +87,8 @@ Please do not be afraid of asking questions?<br>
 
 == Changelog ==
 
-= 1.0 =
-* Created
+= 2.6.26 =
+* Modified from Smarty version 2.6.26 to work as a Wordpress plugin
 
 == Upgrade Notice ==
 
