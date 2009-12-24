@@ -5,7 +5,7 @@ Plugin URI: http://www.phkcorp.com?do=wordpress
 Description: Adds the Smarty Template Engine to Wordpress for ease of migration of themes
 Author: PHK Corporation for enablement
 Version: 2.6.26
-Author URI: http://www.smarty.net/
+Author URI: http://www.phkcorp.com/
 */
 /**
  * Project:     Smarty: the PHP compiling template engine
