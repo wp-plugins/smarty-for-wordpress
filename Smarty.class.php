@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Smarty Template Plugin
+Plugin Name: Smarty for Wordpress
 Plugin URI: http://www.phkcorp.com?do=wordpress
 Description: Adds the Smarty Template Engine to Wordpress for ease of migration of themes
 Author: PHK Corporation for enablement
