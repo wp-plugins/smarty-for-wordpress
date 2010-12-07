@@ -4,7 +4,7 @@ Plugin Name: Smarty for Wordpress
 Plugin URI: http://www.phkcorp.com?do=wordpress
 Description: Adds the Smarty Template Engine to Wordpress for ease of migration of themes
 Author: PHK Corporation for enablement
-Version: 2.6.26
+Version: 2.6.26.1
 Author URI: http://www.phkcorp.com/
 */
 /**
@@ -2072,6 +2072,7 @@ of existing plugins, migration of HTML/PSD/Smarty themes to wordpress-compliant 
 <?php
 }
 
+add_shortcode('smarty-display', 'smarty_load_template');
 add_shortcode('smarty-load', 'smarty_load_template');
 add_shortcode('smarty-assign-by-ref', 'smarty_assign_by_reference');
 

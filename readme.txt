@@ -3,8 +3,8 @@ Contributors: phkcorp2005
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9674139
 Tags: smarty wp-smarty
 Requires at least: 2.8.6
-Tested up to: 2.9
-Stable tag: 2.6.26
+Tested up to: 3.0.2
+Stable tag: 2.6.26.1
 
 Smarty for Wordpress permits your Smarty template file to be embedded in a Wordpress post/page.
 
@@ -90,6 +90,10 @@ Please do not be afraid of asking questions?<br>
 = 2.6.26 =
 * Modified from Smarty version 2.6.26 to work as a Wordpress plugin
 
+= 2.6.26.1 =
+* Added the smarty-display shortcode in addition to smarty-load
+
 == Upgrade Notice ==
 
-None
+The smarty-display shortcode did not make into the first release and to load a smarty template file, the
+smarty-load short code must be used.
