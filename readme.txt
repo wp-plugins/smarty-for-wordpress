@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: smarty wp-smarty
 Requires at least: 2.8.6
 Tested up to: 3.0.2
-Stable tag: 3.0.5
+Stable tag: 3.0.7
 
 Smarty for Wordpress permits your Smarty template file to be embedded in a Wordpress post/page.
 
@@ -29,6 +29,8 @@ themes/theme_name/templates<br>
 themes/theme_name/templates_c<br>
 themes/theme_name/cache<br>
 themes/theme_name/config<br>
+themes/theme_name/plugins<br>
+themes/theme_name/trusted<br>
 
 You may use Smarty for Wordpress either in you PHP/Theme files or from your Wordpress posts
 and pages. To use the API, simple invoke the function that returns the page
@@ -56,6 +58,13 @@ If you want to pass a single variable with the template, use
 	where name is the variable name specified in you smarty template file, and
 	value is the value to be passed to your smarty template file that the above
 	variable represents
+	
+if you want to pass multiple variables to the smarty template, use
+
+	[smarty-load-multiple tpl=home.tpl name='my1,my2,my3' value='1,2,test']
+	
+	where name holds a comma delimited list of smarty template variable names while
+	value holds a comma delimited list of associated values for the variable names.
 
 == Installation ==
 
@@ -63,8 +72,9 @@ To instal this plugin, follow these steps:
 
 1. Download the plugin
 2. Extract the plugin to the `/wp-content/plugins/` directory
-3. Activate the plugin through the 'Plugins' menu in WordPress
-4. You are now ready to use the plugin. See the Admin page from Settings|Smarty for Wordpress for
+3. Create the Smarty directories under your theme path
+4. Activate the plugin through the 'Plugins' menu in WordPress
+5. You are now ready to use the plugin. See the Admin page from Settings|Smarty for Wordpress for
 tips and techniques on usage
 
 == Credits ==
@@ -95,6 +105,11 @@ Please do not be afraid of asking questions?<br>
 
 = 3.0.5 =
 * Upgrade to smarty version 3.0.5
+
+= 3.0.7 =
+* Upgrade to smarty version 3.0.7
+* Added support for smarty plugins and trusted user directories
+* Added support to pass multiple variables to the template
 
 == Upgrade Notice ==
 
