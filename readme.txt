@@ -97,6 +97,8 @@ Please do not be afraid of asking questions?<br>
 = How can I dynamically set my Smarty variables before loading my Smarty template =
 * Use a third party plugin called, Exec-PHP (<a href="http://wordpress.org/extend/plugins/exec-php/">http://wordpress.org/extend/plugins/exec-php/</a>) permits execution of PHP code from the post/page. You can them use smarty_get_instance to set your variables and load your template from within your WP pages/posts.
 
+= A good, independent blog on Smarty for Wordpress =
+* <a href="http://pretty-scripts.com/2010/09/smarty-templates-wordpress.html">http://pretty-scripts.com/2010/09/smarty-templates-wordpress.html</a>
 
 == Changelog ==
 
