@@ -66,6 +66,21 @@ if you want to pass multiple variables to the smarty template, use
 	where name holds a comma delimited list of smarty template variable names while
 	value holds a comma delimited list of associated values for the variable names.
 
+The admin page under Settings permits setting the following Smarty attributes:
+- Auto literal
+- Cache lifetime
+- Cache modified check
+- Config booleanized
+- Config overwrite
+- Config read hidden
+- Debugging
+- Force compile
+- PHP handling
+- Use sub0directories
+
+Testing Smarty for Wordpress can be accomplished by creating a post with the following shortcode,
+[smarty-test]
+
 == Installation ==
 
 To instal this plugin, follow these steps:
@@ -83,7 +98,8 @@ We make honorable mention to anyone who helps make Smarty for Wordpress a better
 
 == Contact ==
 
-Support for this plugin can be obtained from http://groups.google.com/group/smarty-template-engine
+Support for this plugin can be obtained from http://suport.phkcorp.com. Request membership to the Smarty for Wordpress
+forum.
 DO NOT ASK FOR SUPPORT FROM www.smarty.net!
 
 PHK Corporation at phkcorp2005@gmail.com or www.phkcorp.com?do=contact
