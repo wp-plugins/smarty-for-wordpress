@@ -133,6 +133,9 @@ Please do not be afraid of asking questions?<br>
 * Added support for smarty plugins and trusted user directories
 * Added support to pass multiple variables to the template
 
+= 3.0.7.1 =
+* Fix deprecated issue, function call 'assign_by_ref' is unknown or deprecated
+
 == Upgrade Notice ==
 
 The smarty-display shortcode did not make into the first release and to load a smarty template file, the

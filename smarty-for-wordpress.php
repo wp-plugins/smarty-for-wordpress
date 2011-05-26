@@ -4,7 +4,7 @@ Plugin Name: Smarty for Wordpress
 Plugin URI: http://www.phkcorp.com?do=wordpress
 Description: Adds the Smarty Template Engine to Wordpress for ease of migration of themes
 Author: PHK Corporation for enablement
-Version: 3.0.7
+Version: 3.0.7.1
 Author URI: http://www.phkcorp.com/
 */
 
@@ -98,7 +98,12 @@ function smarty_assign_by_reference($atts, $content=null, $code="")
 	$smarty->php_handling = get_option('s4w_php_handling',0);
 	$smarty->use_sub_dirs = (get_option('s4w_use_sub_dirs','0') == '1' ? true : false );
 
-	$smarty->assign_by_ref($name,$value);
+	/**
+	 * per ticket #79 - function call 'assign_by_ref' is unknown or deprecated
+	 *
+	 * $smarty->assign_by_ref($name,$value);
+	 */
+	$smarty->assignByRef($name,$value);
 }
 
 function smarty_array_assign_by_reference($atts, $content=null, $code="")
@@ -118,7 +123,12 @@ function smarty_array_assign_by_reference($atts, $content=null, $code="")
 
 	for($i=0;$i<count($t1);$i++)
 	{
-		$smarty->assign_by_ref($t1[$i],$t2[$i]);
+		/**
+		 * per ticket #79 - function call 'assign_by_ref' is unknown or deprecated
+		 *
+		 * $smarty->assign_by_ref($t1[$i],$t2[$i]);
+		 */
+	    $smarty->assignByRef($t1[$i],$t2[$i]);
 	}
 	$smarty->template_dir = get_theme_root()."/".get_template()."/templates";
 	$smarty->compile_dir  = get_theme_root()."/".get_template()."/templates_c";
