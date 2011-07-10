@@ -76,7 +76,7 @@ The admin page under Settings permits setting the following Smarty attributes:
 - Debugging
 - Force compile
 - PHP handling
-- Use sub0directories
+- Use sub-directories
 
 Testing Smarty for Wordpress can be accomplished by creating a post with the following shortcode,
 [smarty-test]
@@ -135,6 +135,9 @@ Please do not be afraid of asking questions?<br>
 
 = 3.0.7.1 =
 * Fix deprecated issue, function call 'assign_by_ref' is unknown or deprecated
+
+= 3.0.7.2 =
+* Fix an issue when specifying multiple smarty plugin directories
 
 == Upgrade Notice ==
 
