@@ -123,6 +123,19 @@ Please do not be afraid of asking questions?<br>
 = A good, independent blog on Smarty for Wordpress =
 * <a href="http://pretty-scripts.com/2010/09/smarty-templates-wordpress.html">http://pretty-scripts.com/2010/09/smarty-templates-wordpress.html</a>
 
+= How do I change WP_USE_THEMES to false without changing Wordpress core files like index.php =
+* You need to install runkit on your web server and then in your wp-config.php, you need to add the following two lines: runkit_constant_remove('WP_USE_THEMES'); define('WP-USE_THEMES',false); Now Wordpres themes will be turned off and load the Smarty Loader instead, if enabled.
+
+= What configurations are needed to load Smarty without Wordpress themes =
+* You need to specify two constants in your wp-config. define('SMARTY_PATH','/var/www/smarty'); define(
+SMARTY_LOADER','/var/www/smartyloader.php');
+
+= My Smarty templates are loading from the Smarty loader, I just get a blank screen =
+* You need to invoke the plugin function smarty_get_instance() and assign to your $smarty variable. 
+
+= How do I access the WPDB object from the Smarty Loader =
+* use the syntax global $wpdb; within the smarty loader file.
+
 == Changelog ==
 
 = 2.6.26 =
