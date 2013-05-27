@@ -130,7 +130,7 @@ Please do not be afraid of asking questions?<br>
 * You need to specify two constants in your wp-config. define('SMARTY_PATH','/var/www/smarty'); define(
 SMARTY_LOADER','/var/www/smartyloader.php');
 
-= My Smarty templates are loading from the Smarty loader, I just get a blank screen =
+= My Smarty templates are not loading from the Smarty loader, I just get a blank screen =
 * You need to invoke the plugin function smarty_get_instance() and assign to your $smarty variable. 
 
 = How do I access the WPDB object from the Smarty Loader =
