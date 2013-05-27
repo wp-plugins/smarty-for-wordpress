@@ -164,6 +164,9 @@ SMARTY_LOADER','/var/www/smartyloader.php');
 * Upgrade to smarty version 3.1.13
 * When WP_USE_THEMES is false, will load a user define Smarty loader, and now your Smarty templates have access to the Wordpress codex
 
+= 3.1.13.1 =
+* Fix when WP_USE_THEMES is off, wp-admin will not load the smarty loader but permit access to Wordpress admin dashboard.
+
 == Upgrade Notice ==
 
 The smarty-display shortcode did not make into the first release and to load a smarty template file, the
