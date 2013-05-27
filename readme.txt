@@ -125,6 +125,7 @@ Please do not be afraid of asking questions?<br>
 
 = How do I change WP_USE_THEMES to false without changing Wordpress core files like index.php =
 * You need to install runkit on your web server and then in your wp-config.php, you need to add the following two lines: runkit_constant_remove('WP_USE_THEMES'); define('WP-USE_THEMES',false); Now Wordpres themes will be turned off and load the Smarty Loader instead, if enabled.
+* See <a href="http://php.net/manual/en/runkit.installation.php">http://php.net/manual/en/runkit.installation.php</a> for assistance on installing runkit
 
 = What configurations are needed to load Smarty without Wordpress themes =
 * You need to specify two constants in your wp-config. define('SMARTY_PATH','/var/www/smarty'); define(
