@@ -4,7 +4,7 @@ Plugin Name: Smarty for Wordpress
 Plugin URI: http://www.phkcorp.com?do=wordpress
 Description: Adds the Smarty Template Engine to Wordpress for ease of migration of themes
 Author: PHK Corporation for enablement
-Version: 3.1.13.1
+Version: 3.1.13.2
 Author URI: http://www.phkcorp.com/
 */
 
@@ -66,7 +66,7 @@ function smarty_load_template($atts, $content=null, $code="")
 		$smarty->compile_dir  = get_theme_root()."/".get_template()."/templates_c";
 		$smarty->config_dir  = get_theme_root()."/".get_template()."/config";
 		$smarty->cache_dir  = get_theme_root()."/".get_template()."/cache";
-		$smarty->plugins_dir  = get_theme_root()."/".get_template()."/plugins";
+		$smarty->plugins_dir[]  = get_theme_root()."/".get_template()."/plugins";
 		$smarty->trusted_dir  = get_theme_root()."/".get_template()."/trusted";
 	} else {
 	    if (defined('SMARTY_PATH')) {
@@ -109,7 +109,7 @@ function smarty_assign_by_reference($atts, $content=null, $code="")
 		$smarty->compile_dir  = get_theme_root()."/".get_template()."/templates_c";
 		$smarty->config_dir  = get_theme_root()."/".get_template()."/config";
 		$smarty->cache_dir  = get_theme_root()."/".get_template()."/cache";
-		$smarty->plugins_dir  = get_theme_root()."/".get_template()."/plugins";
+		$smarty->plugins_dir[]  = get_theme_root()."/".get_template()."/plugins";
 		$smarty->trusted_dir  = get_theme_root()."/".get_template()."/trusted";
 	} else {
 	    if (defined('SMARTY_PATH')) {
@@ -171,7 +171,7 @@ function smarty_array_assign_by_reference($atts, $content=null, $code="")
 		$smarty->compile_dir  = get_theme_root()."/".get_template()."/templates_c";
 		$smarty->config_dir  = get_theme_root()."/".get_template()."/config";
 		$smarty->cache_dir  = get_theme_root()."/".get_template()."/cache";
-		$smarty->plugins_dir  = get_theme_root()."/".get_template()."/plugins";
+		$smarty->plugins_dir[]  = get_theme_root()."/".get_template()."/plugins";
 		$smarty->trusted_dir  = get_theme_root()."/".get_template()."/trusted";
 	} else {
 	    if (defined('SMARTY_PATH')) {
@@ -207,7 +207,7 @@ function smarty_test_install($atts, $content=null, $code="")
 		$smarty->compile_dir  = get_theme_root()."/".get_template()."/templates_c";
 		$smarty->config_dir  = get_theme_root()."/".get_template()."/config";
 		$smarty->cache_dir  = get_theme_root()."/".get_template()."/cache";
-		$smarty->plugins_dir  = get_theme_root()."/".get_template()."/plugins";
+		$smarty->plugins_dir[]  = get_theme_root()."/".get_template()."/plugins";
 		$smarty->trusted_dir  = get_theme_root()."/".get_template()."/trusted";
 	} else {
 	    if (defined('SMARTY_PATH')) {

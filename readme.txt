@@ -120,9 +120,6 @@ Please do not be afraid of asking questions?<br>
 = How can I dynamically set my Smarty variables before loading my Smarty template =
 * Use a third party plugin called, Exec-PHP (<a href="http://wordpress.org/extend/plugins/exec-php/">http://wordpress.org/extend/plugins/exec-php/</a>) permits execution of PHP code from the post/page. You can them use smarty_get_instance to set your variables and load your template from within your WP pages/posts.
 
-= A good, independent blog on Smarty for Wordpress =
-* <a href="http://pretty-scripts.com/2010/09/smarty-templates-wordpress.html">http://pretty-scripts.com/2010/09/smarty-templates-wordpress.html</a>
-
 = How do I change WP_USE_THEMES to false without changing Wordpress core files like index.php =
 * You need to install runkit on your web server and then in your wp-config.php, you need to add the following two lines: runkit_constant_remove('WP_USE_THEMES'); define('WP-USE_THEMES',false); Now Wordpres themes will be turned off and load the Smarty Loader instead, if enabled.
 * See <a href="http://php.net/manual/en/runkit.installation.php">http://php.net/manual/en/runkit.installation.php</a> for assistance on installing runkit
@@ -166,6 +163,9 @@ SMARTY_LOADER','/var/www/smartyloader.php');
 
 = 3.1.13.1 =
 * Fix when WP_USE_THEMES is off, wp-admin will not load the smarty loader but permit access to Wordpress admin dashboard.
+
+= 3.1.13.2 =
+* Fix plugins array definition in smarty directory initialization routine as reported by a user.
 
 == Upgrade Notice ==
 
