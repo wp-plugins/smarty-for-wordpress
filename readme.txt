@@ -3,8 +3,8 @@ Contributors: phkcorp2005
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9674139
 Tags: smarty wp-smarty
 Requires at least: 2.8.6
-Tested up to: 3.0.2
-Stable tag: 3.0.7
+Tested up to: 3.1.5
+Stable tag: 3.1.5
 
 Smarty for Wordpress permits your Smarty template file to be embedded in a Wordpress post/page.
 
@@ -31,6 +31,13 @@ themes/theme_name/cache<br>
 themes/theme_name/config<br>
 themes/theme_name/plugins<br>
 themes/theme_name/trusted<br>
+
+If you wish to turn off Wordpress themes by changing the constant WP_USE_THEMES to false, you also need to
+set the constant SMARTY_PATH in your wp-config file to the path containing your Smarty files. In addition, you
+need to specify your Smarty Loader file. This file is your index.php replacement for the Smarty templates and 
+obtain a copy of the smarty instance, make any necessary assignments and load your initial templates. The difference
+between this implementation and smarty-only, is you have the full wordpress codex at your dispoable from
+your Smarty routines.
 
 You may use Smarty for Wordpress either in you PHP/Theme files or from your Wordpress posts
 and pages. To use the API, simple invoke the function that returns the page
@@ -138,6 +145,10 @@ Please do not be afraid of asking questions?<br>
 
 = 3.0.7.2 =
 * Fix an issue when specifying multiple smarty plugin directories
+
+= 3.1.13 =
+* Upgrade to smarty version 3.1.13
+* When WP_USE_THEMES is false, will load a user define Smarty loader, and now your Smarty templates have access to the Wordpress codex
 
 == Upgrade Notice ==
 
