@@ -125,8 +125,9 @@ Please do not be afraid of asking questions?<br>
 * See <a href="http://php.net/manual/en/runkit.installation.php">http://php.net/manual/en/runkit.installation.php</a> for assistance on installing runkit
 
 = What configurations are needed to load Smarty without Wordpress themes =
-* You need to specify two constants in your wp-config. define('SMARTY_PATH','/var/www/smarty'); define(
-SMARTY_LOADER','/var/www/smartyloader.php');
+* You need to specify two constants in your wp-config. 
+* define('SMARTY_PATH','/var/www/smarty'); // where your smarty files are located
+* define('SMARTY_LOADER','/var/www/smartyloader.php'); // the name of the file which will load your smarty files
 
 = My Smarty templates are not loading from the Smarty loader, I just get a blank screen =
 * You need to invoke the plugin function smarty_get_instance() and assign to your $smarty variable. 
@@ -166,6 +167,10 @@ SMARTY_LOADER','/var/www/smartyloader.php');
 
 = 3.1.13.2 =
 * Fix plugins array definition in smarty directory initialization routine as reported by a user.
+
+= 3.1.13.3 =
+* Fix when WP_USE_THEMES is off, wp-login and wp-register will not load the smarty loader
+* Enable child themes support, where the smarty files reside in the smarty directory structure under the theme selected including any child theme
 
 == Upgrade Notice ==
 
