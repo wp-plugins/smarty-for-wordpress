@@ -172,6 +172,9 @@ Please do not be afraid of asking questions?<br>
 * Fix when WP_USE_THEMES is off, wp-login and wp-register will not load the smarty loader
 * Enable child themes support, where the smarty files reside in the smarty directory structure under the theme selected including any child theme
 
+= 3.1.13.4 =
+* Change child themes support to off by default, use the constant SMARTY_CHILDTHEMES = true, to turn on child themes support
+
 == Upgrade Notice ==
 
 The smarty-display shortcode did not make into the first release and to load a smarty template file, the

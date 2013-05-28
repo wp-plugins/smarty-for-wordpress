@@ -4,7 +4,7 @@ Plugin Name: Smarty for Wordpress
 Plugin URI: http://www.phkcorp.com?do=wordpress
 Description: Adds the Smarty Template Engine to Wordpress for ease of migration of themes
 Author: PHK Corporation for enablement
-Version: 3.1.13.3
+Version: 3.1.13.4
 Author URI: http://www.phkcorp.com/
 */
 
@@ -14,13 +14,15 @@ function smarty_get_instance()
 {
 	$smarty = new Smarty();
 
+	$theme_path = smarty_get_themes_path();
+
 	if (defined('WP_USE_THEMES') && WP_USE_THEMES == true) {
-		$smarty->template_dir = get_stylesheet_directory() . "/templates";
-		$smarty->compile_dir  = get_stylesheet_directory() . "/templates_c";
-		$smarty->config_dir  = get_stylesheet_directory() . "/config";
-		$smarty->cache_dir  = get_stylesheet_directory() . "/cache";
-		$smarty->plugins_dir[]  = get_stylesheet_directory() . "/plugins";
-		$smarty->trusted_dir  = get_stylesheet_directory() . "/trusted";
+		$smarty->template_dir = $theme_path . "/templates";
+		$smarty->compile_dir  = $theme_path . "/templates_c";
+		$smarty->config_dir  = $theme_path . "/config";
+		$smarty->cache_dir  = $theme_path . "/cache";
+		$smarty->plugins_dir[]  = $theme_path . "/plugins";
+		$smarty->trusted_dir  = $theme_path . "/trusted";
 	} else {
 	    if (defined('SMARTY_PATH')) {
 			$smarty->template_dir = SMARTY_PATH . "/templates";
@@ -61,13 +63,15 @@ function smarty_load_template($atts, $content=null, $code="")
 	$smarty = new Smarty();
 	$smarty->assign_by_ref($name,$value);
 
+	$theme_path = smarty_get_themes_path();
+
 	if (defined('WP_USE_THEMES') && WP_USE_THEMES == true) {
-		$smarty->template_dir = get_stylesheet_directory() . "/templates";
-		$smarty->compile_dir  = get_stylesheet_directory() . "/templates_c";
-		$smarty->config_dir  = get_stylesheet_directory() . "/config";
-		$smarty->cache_dir  = get_stylesheet_directory() . "/cache";
-		$smarty->plugins_dir[]  = get_stylesheet_directory() . "/plugins";
-		$smarty->trusted_dir  = get_stylesheet_directory() . "/trusted";
+		$smarty->template_dir = $theme_path . "/templates";
+		$smarty->compile_dir  = $theme_path . "/templates_c";
+		$smarty->config_dir  = $theme_path . "/config";
+		$smarty->cache_dir  = $theme_path . "/cache";
+		$smarty->plugins_dir[]  = $theme_path . "/plugins";
+		$smarty->trusted_dir  = $theme_path . "/trusted";
 	} else {
 	    if (defined('SMARTY_PATH')) {
 			$smarty->template_dir = SMARTY_PATH . "/templates";
@@ -104,13 +108,16 @@ function smarty_assign_by_reference($atts, $content=null, $code="")
 	$value = "{$value}";
 
 	$smarty = new Smarty();
+
+	$theme_path = smarty_get_themes_path();
+
 	if (defined('WP_USE_THEMES') && WP_USE_THEMES == true) {
-		$smarty->template_dir = get_stylesheet_directory() . "/templates";
-		$smarty->compile_dir  = get_stylesheet_directory() . "/templates_c";
-		$smarty->config_dir  = get_stylesheet_directory() . "/config";
-		$smarty->cache_dir  = get_stylesheet_directory() . "/cache";
-		$smarty->plugins_dir[]  = get_stylesheet_directory() . "/plugins";
-		$smarty->trusted_dir  = get_stylesheet_directory() . "/trusted";
+		$smarty->template_dir = $theme_path . "/templates";
+		$smarty->compile_dir  = $theme_path . "/templates_c";
+		$smarty->config_dir  = $theme_path . "/config";
+		$smarty->cache_dir  = $theme_path . "/cache";
+		$smarty->plugins_dir[]  = $theme_path . "/plugins";
+		$smarty->trusted_dir  = $theme_path . "/trusted";
 	} else {
 	    if (defined('SMARTY_PATH')) {
 			$smarty->template_dir = SMARTY_PATH . "/templates";
@@ -156,6 +163,8 @@ function smarty_array_assign_by_reference($atts, $content=null, $code="")
 
 	$smarty = new Smarty();
 
+	$theme_path = smarty_get_themes_path();
+
 	for($i=0;$i<count($t1);$i++)
 	{
 		/**
@@ -167,12 +176,12 @@ function smarty_array_assign_by_reference($atts, $content=null, $code="")
 	}
 
 	if (defined('WP_USE_THEMES') && WP_USE_THEMES == true) {
-		$smarty->template_dir = get_stylesheet_directory() . "/templates";
-		$smarty->compile_dir  = get_stylesheet_directory() . "/templates_c";
-		$smarty->config_dir  = get_stylesheet_directory() . "/config";
-		$smarty->cache_dir  = get_stylesheet_directory() . "/cache";
-		$smarty->plugins_dir[]  = get_stylesheet_directory() . "/plugins";
-		$smarty->trusted_dir  = get_stylesheet_directory() . "/trusted";
+		$smarty->template_dir = $theme_path . "/templates";
+		$smarty->compile_dir  = $theme_path . "/templates_c";
+		$smarty->config_dir  = $theme_path . "/config";
+		$smarty->cache_dir  = $theme_path . "/cache";
+		$smarty->plugins_dir[]  = $theme_path . "/plugins";
+		$smarty->trusted_dir  = $theme_path . "/trusted";
 	} else {
 	    if (defined('SMARTY_PATH')) {
 			$smarty->template_dir = SMARTY_PATH . "/templates";
@@ -202,13 +211,15 @@ function smarty_test_install($atts, $content=null, $code="")
 {
 	$smarty = new Smarty();
 
+	$theme_path = smarty_get_themes_path();
+
 	if (defined('WP_USE_THEMES') && WP_USE_THEMES == true) {
-		$smarty->template_dir = get_stylesheet_directory() . "/templates";
-		$smarty->compile_dir  = get_stylesheet_directory() . "/templates_c";
-		$smarty->config_dir  = get_stylesheet_directory() . "/config";
-		$smarty->cache_dir  = get_stylesheet_directory() . "/cache";
-		$smarty->plugins_dir[]  = get_stylesheet_directory() . "/plugins";
-		$smarty->trusted_dir  = get_stylesheet_directory() . "/trusted";
+		$smarty->template_dir = $theme_path . "/templates";
+		$smarty->compile_dir  = $theme_path . "/templates_c";
+		$smarty->config_dir  = $theme_path . "/config";
+		$smarty->cache_dir  = $theme_path . "/cache";
+		$smarty->plugins_dir[]  = $theme_path . "/plugins";
+		$smarty->trusted_dir  = $theme_path . "/trusted";
 	} else {
 	    if (defined('SMARTY_PATH')) {
 			$smarty->template_dir = SMARTY_PATH . "/templates";
@@ -379,11 +390,18 @@ of existing plugins, migration of HTML/PSD/Smarty themes to wordpress-compliant 
 }
 
 function smarty_wp_init() {
-	if (defined('SMARTY_LOADER') && SMARTY_LOADER != '') {
+	if (defined('SMARTY_LOADER') && SMARTY_LOADER != '' && file_exists(SMARTY_LOADER)) {
 		require(SMARTY_LOADER);
 		exit;
 	}
 	wp_die('Smarty not configured properly');
+}
+
+function smarty_get_themes_path() {
+    if (defined('SMARTY_CHILDTHEMES') && SMARTY_CHILDTHEMES == true) {
+    	return get_stylesheet_directory();
+    }
+    return get_theme_root()."/".get_template();
 }
 
 add_shortcode('smarty-display', 'smarty_load_template');
