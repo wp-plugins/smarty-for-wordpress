@@ -20,12 +20,14 @@ There are many useful frameworks written in Smarty and NOT Wordpress, like XCart
 
 Stop! Don't throw away that Smarty Template file, Download Smarty for Wordpress, install, activate and use that Smarty template file in Wordpress TODAY!!!
 
-== Publication - The Missing Manual ==
+The following publication, "Guide to Using Smarty for Wordpress Plugin" available on
+Amazon at (http://www.amazon.com/dp/B00K5XTPL2) shows how to implement this framework plugin
+in your wordpress blog.
+
+== Screenshot ==
 The following publication, "Guide to Using Smarty for Wordpress Plugin" available on
 Amazon at http://www.amazon.com/dp/B00K5XTPL2 shows how to implement this framework plugin
 in your wordpress blog.
-
-<img src="http://ecx.images-amazon.com/images/I/41qOnv4Ik5L._BO2,204,203,200_PIsitb-sticker-v3-big,TopRight,0,-55_SX278_SY278_PIkin4,BottomRight,1,22_AA300_SH20_OU01_.jpg">
 
 
 
