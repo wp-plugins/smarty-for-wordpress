@@ -3,8 +3,8 @@ Contributors: phkcorp2005
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9674139
 Tags: smarty wp-smarty
 Requires at least: 2.8.6
-Tested up to: 3.1.5
-Stable tag: 3.1.5
+Tested up to: 3.9
+Stable tag: 3.9
 
 Smarty for Wordpress permits your Smarty template file to be embedded in a Wordpress post/page.
 
@@ -19,6 +19,15 @@ Smarty for Wordpress is the first plugin which incorporates a complete distribut
 There are many useful frameworks written in Smarty and NOT Wordpress, like XCart, that can NOW be implemented into Wordpress with minimal changes and ease?
 
 Stop! Don't throw away that Smarty Template file, Download Smarty for Wordpress, install, activate and use that Smarty template file in Wordpress TODAY!!!
+
+== Publication - The Missing Manual ==
+The following publication, "Guide to Using Smarty for Wordpress Plugin" available on
+Amazon at http://www.amazon.com/dp/B00K5XTPL2 shows how to implement this framework plugin
+in your wordpress blog.
+
+<img src="http://ecx.images-amazon.com/images/I/41qOnv4Ik5L._BO2,204,203,200_PIsitb-sticker-v3-big,TopRight,0,-55_SX278_SY278_PIkin4,BottomRight,1,22_AA300_SH20_OU01_.jpg">
+
+
 
 **Usage**
 
@@ -174,6 +183,9 @@ Please do not be afraid of asking questions?<br>
 
 = 3.1.13.4 =
 * Change child themes support to off by default, use the constant SMARTY_CHILDTHEMES = true, to turn on child themes support
+
+= 3.1.18 =
+* Updated to smarty version 3.1.18
 
 == Upgrade Notice ==
 

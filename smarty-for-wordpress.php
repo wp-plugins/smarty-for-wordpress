@@ -21,16 +21,16 @@ function smarty_get_instance()
 		$smarty->compile_dir  = $theme_path . "/templates_c";
 		$smarty->config_dir  = $theme_path . "/config";
 		$smarty->cache_dir  = $theme_path . "/cache";
-		$smarty->plugins_dir[]  = $theme_path . "/plugins";
-		$smarty->trusted_dir  = $theme_path . "/trusted";
+		//$smarty->plugins_dir[]  = $theme_path . "/plugins";
+		//$smarty->trusted_dir  = $theme_path . "/trusted";
 	} else {
 	    if (defined('SMARTY_PATH')) {
 			$smarty->template_dir = SMARTY_PATH . "/templates";
 			$smarty->compile_dir  = SMARTY_PATH . "/templates_c";
 			$smarty->config_dir  = SMARTY_PATH . "/config";
 			$smarty->cache_dir  = SMARTY_PATH . "/cache";
-			$smarty->plugins_dir[]  = SMARTY_PATH . "/plugins";
-			$smarty->trusted_dir  = SMARTY_PATH . "/trusted";
+			//$smarty->plugins_dir[]  = SMARTY_PATH . "/plugins";
+			//$smarty->trusted_dir  = SMARTY_PATH . "/trusted";
 	    }
 	}
 
@@ -70,16 +70,16 @@ function smarty_load_template($atts, $content=null, $code="")
 		$smarty->compile_dir  = $theme_path . "/templates_c";
 		$smarty->config_dir  = $theme_path . "/config";
 		$smarty->cache_dir  = $theme_path . "/cache";
-		$smarty->plugins_dir[]  = $theme_path . "/plugins";
-		$smarty->trusted_dir  = $theme_path . "/trusted";
+		//$smarty->plugins_dir[]  = $theme_path . "/plugins";
+		//$smarty->trusted_dir  = $theme_path . "/trusted";
 	} else {
 	    if (defined('SMARTY_PATH')) {
 			$smarty->template_dir = SMARTY_PATH . "/templates";
 			$smarty->compile_dir  = SMARTY_PATH . "/templates_c";
 			$smarty->config_dir  = SMARTY_PATH . "/config";
 			$smarty->cache_dir  = SMARTY_PATH . "/cache";
-			$smarty->plugins_dir[]  = SMARTY_PATH . "/plugins";
-			$smarty->trusted_dir  = SMARTY_PATH . "/trusted";
+			//$smarty->plugins_dir[]  = SMARTY_PATH . "/plugins";
+			//$smarty->trusted_dir  = SMARTY_PATH . "/trusted";
 	    }
 	}
 
@@ -116,16 +116,16 @@ function smarty_assign_by_reference($atts, $content=null, $code="")
 		$smarty->compile_dir  = $theme_path . "/templates_c";
 		$smarty->config_dir  = $theme_path . "/config";
 		$smarty->cache_dir  = $theme_path . "/cache";
-		$smarty->plugins_dir[]  = $theme_path . "/plugins";
-		$smarty->trusted_dir  = $theme_path . "/trusted";
+		//$smarty->plugins_dir[]  = $theme_path . "/plugins";
+		//$smarty->trusted_dir  = $theme_path . "/trusted";
 	} else {
 	    if (defined('SMARTY_PATH')) {
 			$smarty->template_dir = SMARTY_PATH . "/templates";
 			$smarty->compile_dir  = SMARTY_PATH . "/templates_c";
 			$smarty->config_dir  = SMARTY_PATH . "/config";
 			$smarty->cache_dir  = SMARTY_PATH . "/cache";
-			$smarty->plugins_dir[]  = SMARTY_PATH . "/plugins";
-			$smarty->trusted_dir  = SMARTY_PATH . "/trusted";
+			//$smarty->plugins_dir[]  = SMARTY_PATH . "/plugins";
+			//$smarty->trusted_dir  = SMARTY_PATH . "/trusted";
 	    }
 	}
 
@@ -180,16 +180,16 @@ function smarty_array_assign_by_reference($atts, $content=null, $code="")
 		$smarty->compile_dir  = $theme_path . "/templates_c";
 		$smarty->config_dir  = $theme_path . "/config";
 		$smarty->cache_dir  = $theme_path . "/cache";
-		$smarty->plugins_dir[]  = $theme_path . "/plugins";
-		$smarty->trusted_dir  = $theme_path . "/trusted";
+		//$smarty->plugins_dir[]  = $theme_path . "/plugins";
+		//$smarty->trusted_dir  = $theme_path . "/trusted";
 	} else {
 	    if (defined('SMARTY_PATH')) {
 			$smarty->template_dir = SMARTY_PATH . "/templates";
 			$smarty->compile_dir  = SMARTY_PATH . "/templates_c";
 			$smarty->config_dir  = SMARTY_PATH . "/config";
 			$smarty->cache_dir  = SMARTY_PATH . "/cache";
-			$smarty->plugins_dir[]  = SMARTY_PATH . "/plugins";
-			$smarty->trusted_dir  = SMARTY_PATH . "/trusted";
+			//$smarty->plugins_dir[]  = SMARTY_PATH . "/plugins";
+			//$smarty->trusted_dir  = SMARTY_PATH . "/trusted";
 	    }
 	}
 
@@ -218,16 +218,16 @@ function smarty_test_install($atts, $content=null, $code="")
 		$smarty->compile_dir  = $theme_path . "/templates_c";
 		$smarty->config_dir  = $theme_path . "/config";
 		$smarty->cache_dir  = $theme_path . "/cache";
-		$smarty->plugins_dir[]  = $theme_path . "/plugins";
-		$smarty->trusted_dir  = $theme_path . "/trusted";
+		//$smarty->plugins_dir[]  = $theme_path . "/plugins";
+		//$smarty->trusted_dir  = $theme_path . "/trusted";
 	} else {
 	    if (defined('SMARTY_PATH')) {
 			$smarty->template_dir = SMARTY_PATH . "/templates";
 			$smarty->compile_dir  = SMARTY_PATH . "/templates_c";
 			$smarty->config_dir  = SMARTY_PATH . "/config";
 			$smarty->cache_dir  = SMARTY_PATH . "/cache";
-			$smarty->plugins_dir[]  = SMARTY_PATH . "/plugins";
-			$smarty->trusted_dir  = SMARTY_PATH . "/trusted";
+			//$smarty->plugins_dir[]  = SMARTY_PATH . "/plugins";
+			//$smarty->trusted_dir  = SMARTY_PATH . "/trusted";
 	    }
 	}
 
