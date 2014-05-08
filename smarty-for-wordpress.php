@@ -4,7 +4,7 @@ Plugin Name: Smarty for Wordpress
 Plugin URI: http://www.phkcorp.com?do=wordpress
 Description: Adds the Smarty Template Engine to Wordpress for ease of migration of themes
 Author: PHK Corporation for enablement
-Version: 3.1.18
+Version: 3.1.18.1
 Author URI: http://www.phkcorp.com/
 */
 
@@ -347,6 +347,8 @@ function displaySmartyManagementPage()
 				</form>
 				<fieldset class='options'>
 					<legend><h2><u>Tips &amp; Techniques</u></h2></legend>
+								<h3>Publication available on Amazon.com</h3>
+								<p><a href="http://www.amazon.com/dp/B00K5XTPL2" target="_blank"><img src="http://ecx.images-amazon.com/images/I/41qOnv4Ik5L._BO2,204,203,200_PIsitb-sticker-v3-big,TopRight,0,-55_SX278_SY278_PIkin4,BottomRight,1,22_AA300_SH20_OU01_.jpg"></a></p>
 								<p>Preparing your theme to accept Smarty templates:</p>
 								<ul>
 								<li>1. Create the four smarty directories (templates,templates_c,config,cache,plugins,trusted) under your theme path</li>
