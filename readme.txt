@@ -24,11 +24,6 @@ The following publication, "Guide to Using Smarty for Wordpress Plugin" availabl
 Amazon at (http://www.amazon.com/dp/B00K5XTPL2) shows how to implement this framework plugin
 in your wordpress blog.
 
-== Screenshot ==
-The following publication, "Guide to Using Smarty for Wordpress Plugin" available on
-Amazon at http://www.amazon.com/dp/B00K5XTPL2 shows how to implement this framework plugin
-in your wordpress blog.
-
 
 
 **Usage**
