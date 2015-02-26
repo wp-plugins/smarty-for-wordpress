@@ -94,6 +94,9 @@ The admin page under Settings permits setting the following Smarty attributes:
 Testing Smarty for Wordpress can be accomplished by creating a post with the following shortcode,
 [smarty-test]
 
+Testing the Smarty Demo included in the Smarty distribution can be accomplished by creating a page or posr with the following shortcode.
+[smarty-demo]
+
 == Installation ==
 
 To instal this plugin, follow these steps:
@@ -184,9 +187,9 @@ Please do not be afraid of asking questions?<br>
 = 3.1.18 =
 * Updated to smarty version 3.1.18
 
-== Upgrade Notice ==
+= 3.1.21 =
+* Updated to smarty version 3.1.21
 
-The smarty-display shortcode did not make into the first release and to load a smarty template file, the
-smarty-load short code must be used.
+== Upgrade Notice ==
 
 The next stable release of Smarty is available and this plugin upgraded appropriately.

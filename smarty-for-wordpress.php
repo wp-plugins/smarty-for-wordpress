@@ -4,19 +4,26 @@ Plugin Name: Smarty for Wordpress
 Plugin URI: http://www.phkcorp.com?do=wordpress
 Description: Adds the Smarty Template Engine to Wordpress for ease of migration of themes
 Author: PHK Corporation for enablement
-Version: 3.1.18.1
+Version: 3.1.21
 Author URI: http://www.phkcorp.com/
 */
 
 require(dirname(__FILE__)."/libs/Smarty.class.php");
 
-function smarty_get_instance()
+function smarty_get_instance($demo=FALSE)
 {
 	$smarty = new Smarty();
 
 	$theme_path = smarty_get_themes_path();
 
-	if (defined('WP_USE_THEMES') && WP_USE_THEMES == true) {
+	if ($demo === TRUE) {
+		$demo_path =  plugin_dir_path( __FILE__ ) . 'demo';
+
+		$smarty->template_dir = $demo_path . "/templates";
+		$smarty->compile_dir  = $demo_path . "/templates_c";
+		$smarty->config_dir  = $demo_path . "/configs";
+		$smarty->cache_dir  = $demo_path . "/cache";
+	} else if (defined('WP_USE_THEMES') && WP_USE_THEMES == true) {
 		$smarty->template_dir = $theme_path . "/templates";
 		$smarty->compile_dir  = $theme_path . "/templates_c";
 		$smarty->config_dir  = $theme_path . "/config";
@@ -245,6 +252,10 @@ function smarty_test_install($atts, $content=null, $code="")
 	$smarty->testInstall();
 }
 
+function smarty_load_demo($atts, $content=null, $code="") {
+	require dirname(__FILE__).'/demo/index.php';
+}
+
 //// Add page to options menu.
 function addSmartyManagementPage()
 {
@@ -372,7 +383,7 @@ function displaySmartyManagementPage()
 
 				<fieldset class='options'>
 					<legend><h2><u>About the Architecture</u></h2></legend>
-<p>This plugin is based on Smarty 3.1.13 version. When a stable update to Smarty is released, then this plugin will be updated.</p>
+<p>This plugin is based on Smarty 3.1.21 version. When a stable update to Smarty is released, then this plugin will be updated.</p>
 <p>This plugin provides a needed and often requested requirement to assist the migration of Smarty templates to Wordpress-compliant
 themes. While the full migration is always preferred, this plugin gives you a fast track to your Smarty migration, as well
 as to embed those flagship Smarty templates/plugins within your new Wordpress pages</p>
@@ -412,6 +423,7 @@ add_shortcode('smarty-assign-by-ref', 'smarty_assign_by_reference');
 add_shortcode('smarty-array','smarty_array_assign_by_reference');
 add_shortcode('smarty-load-multiple','smarty_array_assign_by_reference');
 add_shortcode('smarty-test','smarty_test_install');
+add_shortcode('smarty-demo','smarty_load_demo');
 
 add_action('admin_menu', 'addSmartyManagementPage');
 
