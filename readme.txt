@@ -94,7 +94,7 @@ The admin page under Settings permits setting the following Smarty attributes:
 Testing Smarty for Wordpress can be accomplished by creating a post with the following shortcode,
 [smarty-test]
 
-Testing the Smarty Demo included in the Smarty distribution can be accomplished by creating a page or posr with the following shortcode.
+Testing the Smarty Demo included in the Smarty distribution can be accomplished by creating a page or post with the following shortcode.
 [smarty-demo]
 
 == Installation ==
